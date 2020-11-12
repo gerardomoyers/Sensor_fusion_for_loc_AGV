@@ -1,0 +1,7 @@
+EKF.c:21:6:matrix_multiplication	32	static
+EKF.c:34:6:matrix_Transpose	64	dynamic
+EKF.c:45:6:matrix_sum	32	static
+EKF.c:61:6:matrix_sub	32	static
+EKF.c:78:6:InverseOfMatrix	88	dynamic
+EKF.c:155:6:EKF_prediction	280	static
+EKF.c:187:6:EKF_update	352	static
