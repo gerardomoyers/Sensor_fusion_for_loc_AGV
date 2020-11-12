@@ -1,0 +1,6 @@
+MODULES_MRU_PATH=C\:\\ti\\Thesis_radar\\pa_18xx_mss\\Debug\\pa_18xx_mss.xer4f\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+MODULES_MRU_PATH.1=C\:\\ti\\Thesis_radar\\pa_18xx_dss\\Debug\\pa_18xx_dss.xe674\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe_0/C674X_0
+MODULES_MRU_PATH.2=C\:\\ti\\Thesis_radar\\mrr_18xx_mss\\Debug\\mrr_18xx_mss.xer4f\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+MODULES_MRU_PATH.3=C\:\\ti\\Thesis_radar\\mrr_18xx_dss\\Debug\\mrr_18xx_dss.xe674\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe_0/C674X_0
+eclipse.preferences.version=1
+useAnnotationsPrefPage=true

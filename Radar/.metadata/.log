@@ -1,4 +1,4 @@
-!SESSION 2020-04-09 17:01:30.498 -----------------------------------------------
+!SESSION 2020-06-08 17:29:44.917 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=1.8.0_144
 java.vendor=Oracle Corporation
@@ -6,14 +6,14 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product com.ti.ccstudio.branding.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
 
-!ENTRY com.ti.common.core 1 0 2020-04-09 17:04:01.100
+!ENTRY com.ti.common.core 1 0 2020-06-08 17:29:48.377
 !MESSAGE path=ccs_base/DebugServer
 
-!ENTRY com.ti.common.core 1 0 2020-04-09 17:04:01.101
+!ENTRY com.ti.common.core 1 0 2020-06-08 17:29:48.378
 !MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
 
-!ENTRY org.eclipse.equinox.event 4 0 2020-04-09 17:04:07.720
-!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@3dc14f80 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@2d1f9ec3, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@3dc14f80 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@2d1f9ec3, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@4101e146
+!ENTRY org.eclipse.equinox.event 4 0 2020-06-08 17:29:50.689
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@6ed87ccf (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@4b74a67a, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@6ed87ccf (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@4b74a67a, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@c6653e
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
@@ -119,147 +119,698 @@ Caused by: java.lang.IllegalArgumentException:
 	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:767)
 	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:696)
 	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:387)
-	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 92 more
 
-!ENTRY com.ti.ccstudio.ui 1 0 2020-04-09 17:04:11.942
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-08 17:29:53.644
 !MESSAGE CCS IDE session started!
 	CCS build: 10.0.0.00010
 	CCS location: C:/ti/ccs1000/ccs
-	Workspace location: C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar
+	Workspace location: C:/ti/Thesis_radar
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.167
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.812
 !MESSAGE constructor
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.168
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.812
 !MESSAGE done with directories
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.168
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.813
 !MESSAGE loading ti_logger
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.169
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.814
 !MESSAGE Platform os: win32
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.169
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.814
 !MESSAGE loading cToolsIF
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.226
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.816
 !MESSAGE loading cTools
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.293
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.817
 !MESSAGE loading TraceFactory
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.352
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.819
 !MESSAGE loading sqlite3
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.416
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.821
 !MESSAGE loading CloudTrace
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:04:12.625
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-08 17:29:53.838
 !MESSAGE CloudTrace interface loaded
 
-!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-04-09 17:04:12.924
-!MESSAGE CCS HTTP adapter started! [ccs.port:50516] - Open 'http://localhost:50516/ide' in web browser to see listing of available APIs...
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-08 17:29:53.923
+!MESSAGE CCS HTTP adapter started! [ccs.port:61308] - Open 'http://localhost:61308/ide' in web browser to see listing of available APIs...
 
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-09 17:06:17.814
+!ENTRY com.ti.common.project.core 1 0 2020-06-08 17:30:39.104
+!MESSAGE Import failed for project 'lab0002_short_range_radar' because its meta-data cannot be interpreted. Please contact support.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-08 17:31:04.705
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:31:05.910
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1099817424'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:31:05.919
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.182604644'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:31:17.262
+!MESSAGE Indexed 'mrr_18xx_dss' (8 sources, 353 headers) in 3.95 sec: 18,248 declarations; 36,800 references; 0 unresolved inclusions; 34 syntax errors; 66 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:31:18.749
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.48 sec: 13,234 declarations; 18,967 references; 0 unresolved inclusions; 6 syntax errors; 73 unresolved names (0.23%)
+
+!ENTRY com.ti.common.project.core 1 0 2020-06-08 17:31:35.564
+!MESSAGE Import failed for project 'lab0002_short_range_radar' because its meta-data cannot be interpreted. Please contact support.
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:32:10.485
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1747091022'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:32:10.490
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.1131460993'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:32:19.362
+!MESSAGE Indexed 'odsdemo_16xx_dss' (11 sources, 352 headers) in 2.24 sec: 17,477 declarations; 34,709 references; 4 unresolved inclusions; 25 syntax errors; 747 unresolved names (1.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:32:20.464
+!MESSAGE Indexed 'odsdemo_16xx_mss' (2 sources, 163 headers) in 1.1 sec: 12,369 declarations; 17,990 references; 0 unresolved inclusions; 4 syntax errors; 66 unresolved names (0.22%)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-06-08 17:32:31.219
 !MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
 
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-09 17:10:22.574
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:33:23.102
+!MESSAGE Indexed 'srrdemo_16xx_dss' (8 sources, 348 headers) in 1.62 sec: 17,926 declarations; 35,698 references; 0 unresolved inclusions; 28 syntax errors; 63 unresolved names (0.12%)
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:33:23.172
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1005791668'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-08 17:33:23.184
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.1414634052'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-08 17:33:27.058
+!MESSAGE Indexed 'srrdemo_16xx_mss' (3 sources, 168 headers) in 1.01 sec: 12,643 declarations; 18,124 references; 0 unresolved inclusions; 4 syntax errors; 60 unresolved names (0.19%)
+!SESSION 2020-06-10 11:48:30.112 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-06-10 11:48:35.327
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-06-10 11:48:35.328
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-10 11:49:11.493
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.795
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.796
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.796
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.798
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.799
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.861
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.927
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:11.981
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:12.028
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-10 11:49:12.202
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-10 11:49:12.361
+!MESSAGE CCS HTTP adapter started! [ccs.port:59902] - Open 'http://localhost:59902/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-10 11:50:17.626
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+!SESSION 2020-06-11 13:07:27.317 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-06-11 13:07:29.456
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-06-11 13:07:29.457
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-11 13:07:49.929
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.241
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.242
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.243
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.244
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.244
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.314
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.371
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.432
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.492
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-11 13:07:50.676
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-11 13:07:50.834
+!MESSAGE CCS HTTP adapter started! [ccs.port:53788] - Open 'http://localhost:53788/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-11 13:08:40.935
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-06-11 13:10:31.774
 !MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
 
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-09 17:16:04.581
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-06-11 13:11:15.414
+!MESSAGE REX Ping (no_proxy): http://dev.ti.com/tirex4-desktop / resposeCode: 307
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-06-11 13:11:15.415
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-06-11 13:11:15.962
 !MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
 
-!ENTRY com.ti.ccstudio.project.ui.webcontent 4 0 2020-04-09 17:46:52.200
-!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.ui.webcontent'.
+!ENTRY com.ti.common.project.core 1 0 2020-06-11 13:11:41.997
+!MESSAGE A project with name 'mrr_18xx_dss' already exists in the workspace!
+
+!ENTRY com.ti.common.project.core 1 0 2020-06-11 13:11:54.136
+!MESSAGE A project with name 'mrr_18xx_dss' already exists in the workspace!
+
+!ENTRY org.eclipse.ui 2 2 2020-06-11 13:23:20.328
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+!SESSION 2020-06-16 13:16:56.405 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-06-16 13:17:01.661
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-06-16 13:17:01.663
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-16 13:17:36.178
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.453
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.453
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.454
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.455
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.456
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.500
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.563
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.609
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.661
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:17:36.846
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-16 13:17:37.032
+!MESSAGE CCS HTTP adapter started! [ccs.port:52570] - Open 'http://localhost:52570/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-16 13:18:28.967
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1870312370'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-16 13:18:28.974
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.578347676'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-16 13:18:39.951
+!MESSAGE Indexed 'pa_18xx_dss' (17 sources, 384 headers) in 4.28 sec: 18,800 declarations; 36,706 references; 4 unresolved inclusions; 33 syntax errors; 267 unresolved names (0.48%)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-16 13:18:40.256
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-16 13:18:41.665
+!MESSAGE Indexed 'pa_18xx_mss' (3 sources, 192 headers) in 1.71 sec: 14,644 declarations; 19,989 references; 0 unresolved inclusions; 6 syntax errors; 67 unresolved names (0.19%)
+!SESSION 2020-06-16 13:53:48.798 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-06-16 13:53:50.341
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-06-16 13:53:50.342
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-16 13:54:01.592
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.743
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.744
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.744
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.745
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.746
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.748
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.750
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.752
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.754
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-16 13:54:01.769
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-16 13:54:01.847
+!MESSAGE CCS HTTP adapter started! [ccs.port:52903] - Open 'http://localhost:52903/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-16 13:55:09.596
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+!SESSION 2020-06-18 11:12:42.783 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-06-18 11:12:47.928
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-06-18 11:12:47.929
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-06-18 11:13:22.281
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.592
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.593
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.593
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.594
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.595
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.660
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.735
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.809
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:22.883
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-06-18 11:13:23.125
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-06-18 11:13:23.275
+!MESSAGE CCS HTTP adapter started! [ccs.port:51570] - Open 'http://localhost:51570/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-06-18 11:14:31.923
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-18 13:13:04.339
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.636944946'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-06-18 13:13:04.345
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.95719590'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-18 13:13:12.543
+!MESSAGE Indexed 'mrr_18xx_dss' (10 sources, 355 headers) in 1.72 sec: 18,890 declarations; 39,531 references; 0 unresolved inclusions; 35 syntax errors; 69 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-18 13:13:13.641
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.1 sec: 13,292 declarations; 19,190 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
+!SESSION 2020-07-03 10:43:01.493 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-07-03 10:43:06.737
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-07-03 10:43:06.738
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-07-03 10:43:40.378
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.558
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.559
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.559
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.560
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.561
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.628
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.723
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.818
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:40.924
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-03 10:43:41.591
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-07-03 10:43:41.712
+!MESSAGE CCS HTTP adapter started! [ccs.port:50909] - Open 'http://localhost:50909/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-07-03 10:44:48.486
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY com.ti.ccstudio.project.ui 4 0 2020-07-03 12:05:38.582
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.ui'.
 !STACK 0
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at sun.net.NetworkClient.doConnect(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$1.run(IDEServlet.java:118)
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.checkCancel(CommonBuilder.java:1316)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:780)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:518)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at com.ti.ccstudio.project.core.services.ProjectBuilder.internalBuildProjects(ProjectBuilder.java:393)
+	at com.ti.ccstudio.project.core.services.ProjectBuilder.buildProjects(ProjectBuilder.java:283)
+	at com.ti.ccstudio.project.ui.internal.actions.BuildProjectAction_hack$2.run(BuildProjectAction_hack.java:82)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY com.ti.ccstudio.project.ui.webcontent 4 0 2020-04-09 17:46:54.216
-!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.ui.webcontent'.
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-03 13:05:13.488
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1102770360'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-03 13:05:13.497
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.134384331'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-03 13:05:22.126
+!MESSAGE Indexed 'mrr_18xx_dss' (10 sources, 355 headers) in 2.05 sec: 18,890 declarations; 39,531 references; 0 unresolved inclusions; 35 syntax errors; 69 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-03 13:05:23.283
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.15 sec: 13,292 declarations; 19,190 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-07-03 17:01:50.078
+!MESSAGE Error
 !STACK 0
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at sun.net.NetworkClient.doConnect(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$1.run(IDEServlet.java:118)
+java.lang.NullPointerException
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:70)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreferenceNode(CCorePreferenceConstants.java:427)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreferenceNode(CCorePreferenceConstants.java:412)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreference(CCorePreferenceConstants.java:482)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.getIncludeExportPatterns(PDOMIndexerTask.java:221)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1033)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:96)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.ui 4 0 2020-04-09 17:47:14.596
-!MESSAGE Unhandled event loop exception
+!ENTRY org.eclipse.core.jobs 4 2 2020-07-03 17:01:50.079
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
 !STACK 0
-org.eclipse.swt.SWTException: Widget is disposed
-	at org.eclipse.swt.SWT.error(SWT.java:4720)
-	at org.eclipse.swt.SWT.error(SWT.java:4635)
-	at org.eclipse.swt.SWT.error(SWT.java:4606)
-	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
-	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:351)
-	at org.eclipse.swt.widgets.Label.setImage(Label.java:354)
-	at org.eclipse.jface.dialogs.TitleAreaDialog.setTitleImage(TitleAreaDialog.java:677)
-	at org.eclipse.jface.wizard.WizardDialog.hardClose(WizardDialog.java:894)
-	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:840)
-	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
-	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
-	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+java.lang.NullPointerException
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:70)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreferenceNode(CCorePreferenceConstants.java:427)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreferenceNode(CCorePreferenceConstants.java:412)
+	at org.eclipse.cdt.core.CCorePreferenceConstants.getPreference(CCorePreferenceConstants.java:482)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.getIncludeExportPatterns(PDOMIndexerTask.java:221)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1033)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:96)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-07-08 11:36:29.504 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-07-08 11:36:34.740
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-07-08 11:36:34.741
+!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-07-08 11:37:10.523
+!MESSAGE CCS IDE session started!
+	CCS build: 10.0.0.00010
+	CCS location: C:/ti/ccs1000/ccs
+	Workspace location: C:/ti/Thesis_radar
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.821
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.822
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.823
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.832
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.834
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.902
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:10.986
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:11.055
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:11.140
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-07-08 11:37:11.870
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-07-08 11:37:11.992
+!MESSAGE CCS HTTP adapter started! [ccs.port:51171] - Open 'http://localhost:51171/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-07-08 11:37:53.117
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 11:52:33.166
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1198134051'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 11:52:33.173
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.1550593343'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 11:52:42.052
+!MESSAGE Indexed 'mrr_18xx_dss' (10 sources, 355 headers) in 2.19 sec: 18,890 declarations; 39,531 references; 0 unresolved inclusions; 35 syntax errors; 69 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 11:52:43.211
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.16 sec: 13,292 declarations; 19,190 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 12:04:15.225
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.2068491412'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 12:04:15.232
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.1654370857'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 12:04:23.128
+!MESSAGE Indexed 'mrr_18xx_dss' (8 sources, 353 headers) in 1.56 sec: 18,248 declarations; 36,800 references; 0 unresolved inclusions; 34 syntax errors; 66 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 12:04:24.142
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.01 sec: 13,234 declarations; 18,967 references; 0 unresolved inclusions; 6 syntax errors; 73 unresolved names (0.23%)
+
+!ENTRY org.eclipse.core.resources 2 2 2020-07-08 12:45:51.577
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-07-08 12:45:51.577
+!MESSAGE The project description file (.project) for 'mrr_18xx_mss' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 12:47:31.335
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.1437656902'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 12:47:31.340
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.2013426971'
+
+!ENTRY org.eclipse.core.resources 2 2 2020-07-08 12:47:32.197
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-07-08 12:47:32.197
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 12:47:39.772
+!MESSAGE Indexed 'mrr_18xx_dss' (10 sources, 355 headers) in 1.64 sec: 18,890 declarations; 39,531 references; 0 unresolved inclusions; 35 syntax errors; 69 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 12:47:40.816
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.04 sec: 13,292 declarations; 19,190 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
+
+!ENTRY org.eclipse.ui 4 0 2020-07-08 13:03:10.161
+!MESSAGE Cannot create or restore 'mrr_18xx_mss' because it already exists.
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Cannot create or restore 'mrr_18xx_mss' because it already exists.
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.undo(UndoableOperation2ChangeAdapter.java:213)
+	at org.eclipse.core.commands.operations.TriggeredOperations.undo(TriggeredOperations.java:215)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(DefaultOperationHistory.java:407)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.undo(DefaultOperationHistory.java:1151)
+	at org.eclipse.ui.operations.UndoActionHandler.runCommand(UndoActionHandler.java:86)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.lambda$0(OperationHistoryActionHandler.java:288)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.access$6(TimeTriggeredProgressMonitorDialog.java:1)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.lambda$0(TimeTriggeredProgressMonitorDialog.java:155)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.run(TimeTriggeredProgressMonitorDialog.java:167)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.run(OperationHistoryActionHandler.java:301)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at sun.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:386)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3988)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3587)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
-	at org.eclipse.jface.window.Window.open(Window.java:799)
-	at org.eclipse.rtsc.project.ui.extdiscovery.InstallExtensionSitesWizard.openIfNecessary(InstallExtensionSitesWizard.java:62)
-	at org.eclipse.rtsc.project.ui.extdiscovery.PromptExtensionSitesJob.runInUIThread(PromptExtensionSitesJob.java:79)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1201)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1491)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4881)
+	at org.eclipse.swt.widgets.Tree.WM_CHAR(Tree.java:5992)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4759)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:5987)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
@@ -281,7 +832,29 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
-!SESSION 2020-04-09 17:47:15.136 -----------------------------------------------
+Caused by: org.eclipse.core.runtime.CoreException: Cannot create or restore 'mrr_18xx_mss' because it already exists.
+	at org.eclipse.ltk.internal.core.refactoring.resource.UndoDeleteResourceChange.perform(UndoDeleteResourceChange.java:75)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter$1.run(UndoableOperation2ChangeAdapter.java:332)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.executeChange(UndoableOperation2ChangeAdapter.java:355)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.undo(UndoableOperation2ChangeAdapter.java:197)
+	... 69 more
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 13:31:49.749
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerDebug.2127542657'
+
+!ENTRY com.ti.ccstudio.project.core 2 0 2020-07-08 13:31:49.766
+!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_16.9.exe.compilerRelease.1433568146'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 13:31:57.734
+!MESSAGE Indexed 'mrr_18xx_dss' (8 sources, 353 headers) in 1.6 sec: 18,248 declarations; 36,800 references; 0 unresolved inclusions; 34 syntax errors; 66 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 13:31:58.786
+!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 175 headers) in 1.05 sec: 13,234 declarations; 18,967 references; 0 unresolved inclusions; 6 syntax errors; 73 unresolved names (0.23%)
+!SESSION 2020-08-21 17:38:16.311 -----------------------------------------------
 eclipse.buildId=4.14.0.I20191210-0610
 java.version=1.8.0_144
 java.vendor=Oracle Corporation
@@ -289,281 +862,50 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product com.ti.ccstudio.branding.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
 
-!ENTRY com.ti.common.core 1 0 2020-04-09 17:47:30.589
+!ENTRY com.ti.common.core 1 0 2020-08-21 17:38:21.536
 !MESSAGE path=ccs_base/DebugServer
 
-!ENTRY com.ti.common.core 1 0 2020-04-09 17:47:30.589
+!ENTRY com.ti.common.core 1 0 2020-08-21 17:38:21.537
 !MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE constructor
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE done with directories
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE loading ti_logger
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE Platform os: win32
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE loading cToolsIF
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.384
-!MESSAGE loading cTools
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.399
-!MESSAGE loading TraceFactory
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.399
-!MESSAGE loading sqlite3
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.399
-!MESSAGE loading CloudTrace
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-09 17:47:38.415
-!MESSAGE CloudTrace interface loaded
-
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-09 17:47:40.130
-!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
-
-!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-04-09 17:47:40.523
-!MESSAGE CCS HTTP adapter started! [ccs.port:51267] - Open 'http://localhost:51267/ide' in web browser to see listing of available APIs...
-
-!ENTRY com.ti.ccstudio.ui 1 0 2020-04-09 17:47:42.314
+!ENTRY com.ti.ccstudio.ui 1 0 2020-08-21 17:38:52.499
 !MESSAGE CCS IDE session started!
 	CCS build: 10.0.0.00010
 	CCS location: C:/ti/ccs1000/ccs
-	Workspace location: C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar
+	Workspace location: C:/ti/Thesis_radar
 
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-09 18:36:01.326
-!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
-
-!ENTRY org.eclipse.equinox.p2.repository 4 0 2020-04-09 18:53:55.865
-!MESSAGE An error occurred while downloading http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/content.jar. The cache file C:\ti\ccs1000\ccs\eclipse\p2\org.eclipse.equinox.p2.repository\cache\downloading\content274127052.jar could not be renamed to C:\ti\ccs1000\ccs\eclipse\p2\org.eclipse.equinox.p2.repository\cache\content274127052.jar.
-
-!ENTRY org.eclipse.equinox.p2.core 4 0 2020-04-09 18:53:55.866
-!MESSAGE Unable to load repositories.
-!SESSION 2020-04-14 11:08:07.204 -----------------------------------------------
-eclipse.buildId=4.14.0.I20191210-0610
-java.version=1.8.0_144
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 1 0 2020-04-14 11:08:12.401
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 1 0 2020-04-14 11:08:12.402
-!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
-
-!ENTRY com.ti.ccstudio.ui 1 0 2020-04-14 11:08:46.440
-!MESSAGE CCS IDE session started!
-	CCS build: 10.0.0.00010
-	CCS location: C:/ti/ccs1000/ccs
-	Workspace location: C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.613
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.767
 !MESSAGE constructor
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.613
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.768
 !MESSAGE done with directories
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.613
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.768
 !MESSAGE loading ti_logger
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.614
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.769
 !MESSAGE Platform os: win32
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.614
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.770
 !MESSAGE loading cToolsIF
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.660
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.816
 !MESSAGE loading cTools
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.706
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.892
 !MESSAGE loading TraceFactory
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.743
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:52.968
 !MESSAGE loading sqlite3
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.788
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:53.044
 !MESSAGE loading CloudTrace
 
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 11:08:46.939
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-08-21 17:38:53.307
 !MESSAGE CloudTrace interface loaded
 
-!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-04-14 11:08:47.016
-!MESSAGE CCS HTTP adapter started! [ccs.port:51043] - Open 'http://localhost:51043/ide' in web browser to see listing of available APIs...
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-08-21 17:38:53.777
+!MESSAGE CCS HTTP adapter started! [ccs.port:52416] - Open 'http://localhost:52416/ide' in web browser to see listing of available APIs...
 
-!ENTRY org.eclipse.ui 2 2 2020-04-14 11:22:19.728
-!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY com.ti.ccstudio.debug 1 0 2020-04-14 11:22:24.782
-!MESSAGE DS_ERROR: Warning:
-A firmware update is required for the XDS110 probe. The current firmware is version 3.0.0.5. The probe must be upgraded to firmware version 3.0.0.11 to be compatible with this software.
-Click the "Update" button to update the firmware.
-DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
-(Emulation package 9.1.0.00001)
-
-
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-14 11:45:06.054
-!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 18:50:55.575
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerDebug.2041643971'
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 18:50:55.585
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerRelease.1756875545'
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 18:51:06.979
-!MESSAGE Indexed 'mrr_18xx_dss' (8 sources, 357 headers) in 4.01 sec: 18,809 declarations; 37,703 references; 0 unresolved inclusions; 37 syntax errors; 94 unresolved names (0.17%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 18:51:08.352
-!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 177 headers) in 1.37 sec: 13,076 declarations; 18,853 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
-!SESSION 2020-04-14 19:09:06.676 -----------------------------------------------
-eclipse.buildId=4.14.0.I20191210-0610
-java.version=1.8.0_144
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
-
-!ENTRY org.eclipse.core.resources 2 10035 2020-04-14 19:09:08.207
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY com.ti.common.core 1 0 2020-04-14 19:09:08.285
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 1 0 2020-04-14 19:09:08.285
-!MESSAGE debugServerDir=C:/ti/ccs1000/ccs/ccs_base/DebugServer
-
-!ENTRY com.ti.ccstudio.ui 1 0 2020-04-14 19:09:21.211
-!MESSAGE CCS IDE session started!
-	CCS build: 10.0.0.00010
-	CCS location: C:/ti/ccs1000/ccs
-	Workspace location: C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar
-
-!ENTRY com.ti.ccstudio.debug.server 4 214294189 2020-04-14 19:09:21.304
-!MESSAGE Unexpected CCS exit detected [4/14/20 11:08 AM]!!!
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.445
-!MESSAGE constructor
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.445
-!MESSAGE done with directories
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.445
-!MESSAGE loading ti_logger
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.445
-!MESSAGE Platform os: win32
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.445
-!MESSAGE loading cToolsIF
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.461
-!MESSAGE loading cTools
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.461
-!MESSAGE loading TraceFactory
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.461
-!MESSAGE loading sqlite3
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.461
-!MESSAGE loading CloudTrace
-
-!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-04-14 19:09:21.492
-!MESSAGE CloudTrace interface loaded
-
-!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-04-14 19:09:21.758
-!MESSAGE CCS HTTP adapter started! [ccs.port:54793] - Open 'http://localhost:54793/ide' in web browser to see listing of available APIs...
-
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-14 19:10:16.556
-!MESSAGE REX Ping (no_proxy): http://dev.ti.com/tirex4-desktop / resposeCode: 200
-
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-14 19:10:16.556
-!MESSAGE REX Launching REX 4.1 (online)
-
-!ENTRY org.eclipse.e4.ui.workbench 1 0 2020-04-14 19:10:18.964
-!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 19:10:56.741
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerDebug.336682544'
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 19:10:56.756
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerRelease.1438654928'
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 19:11:05.630
-!MESSAGE Indexed 'mrr_18xx_dss' (8 sources, 357 headers) in 2.42 sec: 18,809 declarations; 37,703 references; 0 unresolved inclusions; 37 syntax errors; 94 unresolved names (0.17%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 19:11:07.053
-!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 177 headers) in 1.41 sec: 13,076 declarations; 18,853 references; 0 unresolved inclusions; 6 syntax errors; 74 unresolved names (0.23%)
-
-!ENTRY com.ti.ccstudio.project.ui 4 0 2020-04-14 19:20:17.699
-!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.ui'.
-!STACK 0
-org.eclipse.core.runtime.OperationCanceledException
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.checkCancel(CommonBuilder.java:1316)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:780)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:518)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
-	at com.ti.ccstudio.project.core.services.ProjectBuilder.internalBuildProjects(ProjectBuilder.java:393)
-	at com.ti.ccstudio.project.core.services.ProjectBuilder.buildProjects(ProjectBuilder.java:283)
-	at com.ti.ccstudio.project.ui.internal.actions.BuildProjectAction_hack$2.run(BuildProjectAction_hack.java:82)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 19:21:08.166
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerDebug.484987531'
-
-!ENTRY com.ti.ccstudio.project.core 2 0 2020-04-14 19:21:08.166
-!MESSAGE Unrecognized option setting '--elf' for tool 'com.ti.ccstudio.buildDefinitions.TMS470_20.2.exe.compilerRelease.207427805'
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 19:21:16.399
-!MESSAGE Indexed 'mrr_18xx_dss' (10 sources, 368 headers) in 1.89 sec: 21,548 declarations; 43,947 references; 0 unresolved inclusions; 38 syntax errors; 162 unresolved names (0.25%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-04-14 19:21:17.465
-!MESSAGE Indexed 'mrr_18xx_mss' (3 sources, 177 headers) in 1.07 sec: 13,134 declarations; 19,076 references; 0 unresolved inclusions; 6 syntax errors; 75 unresolved names (0.23%)
-
-!ENTRY com.ti.ccstudio.project.ui 4 0 2020-04-14 19:26:16.853
-!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.ui'.
-!STACK 0
-org.eclipse.core.runtime.OperationCanceledException
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.checkCancel(CommonBuilder.java:1316)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:780)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:518)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
-	at com.ti.ccstudio.project.core.services.ProjectBuilder.internalBuildProjects(ProjectBuilder.java:393)
-	at com.ti.ccstudio.project.core.services.ProjectBuilder.buildProjects(ProjectBuilder.java:283)
-	at com.ti.ccstudio.project.ui.internal.actions.BuildProjectAction_hack$2.run(BuildProjectAction_hack.java:82)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.core.resources 2 2 2020-04-14 19:26:41.865
-!MESSAGE Save operation warnings.
-!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-04-14 19:26:41.865
-!MESSAGE The project description file (.project) for 'mrr_18xx_mss' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-08-21 17:39:29.478
+!MESSAGE No repository found at file:/C:/ti/mmwave_sdk_03_02_00_04/.

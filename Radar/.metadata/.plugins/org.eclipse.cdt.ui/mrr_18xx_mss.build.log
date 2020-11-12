@@ -3,33 +3,36 @@
 
 "C:\\ti\\ccs1000\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
  
-rm -f C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss/mrr_18xx_mss.bin
+rm -f C:/ti/Thesis_radar/mrr_18xx_mss/mrr_18xx_mss.bin
 makefile:190: recipe for target 'pre-build' failed
-process_begin: CreateProcess(NULL, rm -f C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss/mrr_18xx_mss.bin, ...) failed.
+process_begin: CreateProcess(NULL, rm -f C:/ti/Thesis_radar/mrr_18xx_mss/mrr_18xx_mss.bin, ...) failed.
  
 gmake[1]: [pre-build] Error 2 (ignored)
  
 Building file: "../mss_mrr.cfg"
 Invoking: XDCtools
-"C:/ti/ccs1000/xdctools_3_61_00_16_core/xs" --xdcpath="C:/ti/bios_6_73_01_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.R4F -p ti.platforms.cortexR:AWR16XX:false:200 -r release -c "C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS" --compileOptions "--enum_type=int " "../mss_mrr.cfg"
+"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/bios_6_73_01_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.R4F -p ti.platforms.cortexR:AWR16XX:false:200 -r release -c "C:/ti/ti-cgt-arm_16.9.6.LTS" --compileOptions "--enum_type=int " "../mss_mrr.cfg"
 making package.mak (because of package.bld) ...
 generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
 configuring mss_mrr.xer4f from package/cfg/mss_mrr_per4f.cfg ...
 generating custom ti.sysbios library makefile ... 
 Starting build of library sources ...
-making C:/Users/Gerardo/DOCUME~1/Escuela/Maestria/Tesis/SOFTWA~1/Radar/mrr_18xx_mss/src/sysbios/sysbios.aer4f ...
+making C:/ti/Thesis_radar/mrr_18xx_mss/src/sysbios/sysbios.aer4f ...
+gmake[1]: Entering directory `C:/ti/Thesis_radar/mrr_18xx_mss/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `C:/ti/Thesis_radar/mrr_18xx_mss/src/sysbios'
 Build of libraries done.
 cler4f package/cfg/mss_mrr_per4f.c ...
 Finished building: "../mss_mrr.cfg"
  
 Building file: "../common/cfg.c"
 Invoking: ARM Compiler
-"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_03_00_03" --include_path="C:/ti/mmwave_sdk_03_03_00_03/packages" --include_path="C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="common/cfg.d_raw" --obj_directory="common" --cmd_file="configPkg/compiler.opt"  "../common/cfg.c"
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="common/cfg.d_raw" --obj_directory="common" --cmd_file="configPkg/compiler.opt"  "../common/cfg.c"
 Finished building: "../common/cfg.c"
  
 Building file: "../mss_mrr_cli.c"
 Invoking: ARM Compiler
-"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_03_00_03" --include_path="C:/ti/mmwave_sdk_03_03_00_03/packages" --include_path="C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_mrr_cli.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_mrr_cli.c"
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_mrr_cli.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_mrr_cli.c"
 "../mss_mrr_cli.c", line 307: warning #179-D: variable "startIndex" was declared but never referenced
 "../mss_mrr_cli.c", line 308: warning #179-D: variable "endIndex" was declared but never referenced
 "../mss_mrr_cli.c", line 309: warning #179-D: variable "scanCount" was declared but never referenced
@@ -37,32 +40,40 @@ Finished building: "../mss_mrr_cli.c"
  
 Building file: "../mss_main.c"
 Invoking: ARM Compiler
-"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_03_00_03" --include_path="C:/ti/mmwave_sdk_03_03_00_03/packages" --include_path="C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_main.c"
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/mrr_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_main.c"
 "../mss_main.c", line 644: warning #169-D: argument of type "volatile rlRfPhaseShiftCfg_t *" is incompatible with parameter of type "rlRfPhaseShiftCfg_t *"
 "../mss_main.c", line 890: warning #121-D: return value type does not match the function type
 Finished building: "../mss_main.c"
  
 Building target: "mrr_18xx_mss.xer4f"
 Invoking: ARM Linker
-"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi -z -m"mrr_18xx_mss.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/esm/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/gpio/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/pinmux/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/dma/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/uart/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/drivers/canfd/lib" -i"C:/ti/mmwave_sdk_03_03_00_03/packages/ti/utils/cli/lib" -i"C:/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_SIZE=0x100000 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="mrr_18xx_mss.xml" --rom_model --unused_section_elimination=on -o "mrr_18xx_mss.xer4f" "./mss_main.obj" "./mss_mrr_cli.obj" "./common/cfg.obj" "../mss_mrr_linker.cmd" "../r4f_linker.cmd" -l"configPkg/linker.cmd"  -llibosal_xwr18xx.aer4f -llibesm_xwr18xx.aer4f -llibgpio_xwr18xx.aer4f -llibsoc_xwr18xx.aer4f -llibmailbox_xwr18xx.aer4f -llibpinmux_xwr18xx.aer4f -llibcrc_xwr18xx.aer4f -llibDMA_xwr18xx.aer4f -llibuart_xwr18xx.aer4f -llibcanfd_xwr18xx.aer4f -llibmmwavelink_xwr18xx.aer4f -llibmmwave_xwr18xx.aer4f -llibcli_xwr18xx.aer4f -lrtsv7R4_T_le_v3D16_eabi.lib -llibc.a 
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --define=_LITTLE_ENDIAN --define=MMWAVE_L3RAM_NUM_BANK=8 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=SHMEM_ALLOC=0x00000008 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi -z -m"mrr_18xx_mss.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/esm/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/gpio/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/pinmux/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/dma/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/uart/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/canfd/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/utils/cli/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_SIZE=0x100000 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="mrr_18xx_mss.xml" --rom_model --unused_section_elimination=on -o "mrr_18xx_mss.xer4f" "./mss_main.obj" "./mss_mrr_cli.obj" "./common/cfg.obj" "../mss_mrr_linker.cmd" "../r4f_linker.cmd" -l"configPkg/linker.cmd"  -llibosal_xwr18xx.aer4f -llibesm_xwr18xx.aer4f -llibgpio_xwr18xx.aer4f -llibsoc_xwr18xx.aer4f -llibmailbox_xwr18xx.aer4f -llibpinmux_xwr18xx.aer4f -llibcrc_xwr18xx.aer4f -llibDMA_xwr18xx.aer4f -llibuart_xwr18xx.aer4f -llibcanfd_xwr18xx.aer4f -llibmmwavelink_xwr18xx.aer4f -llibmmwave_xwr18xx.aer4f -llibcli_xwr18xx.aer4f -lrtsv7R4_T_le_v3D16_eabi.lib -llibc.a 
 <Linking>
 Finished building target: "mrr_18xx_mss.xer4f"
  
-C:/ti/mmwave_sdk_03_03_00_03/packages/scripts/ImageCreator/out2rprc/out2rprc.exe mrr_18xx_mss.xer4f mrr_18xx_mss.bin
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/out2rprc/out2rprc.exe mrr_18xx_mss.xer4f mrr_18xx_mss.bin
 Parsing the input object file, mrr_18xx_mss.xer4f.
 Appending zeros 0
 Appending zeros 256
+Appending zeros 76596
 File conversion complete!
-C:/ti/mmwave_sdk_03_03_00_03/packages/scripts/ImageCreator/multicore_image_generator/MulticoreImageGen.exe LE 37 0x00000008 xwr18xx_mrr_demo.bin 0x35510000 C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_mss/Debug/mrr_18xx_mss.bin 0xb5510000 C:/ti/mmwave_sdk_03_03_00_03/firmware/radarss/xwr18xx_radarss_rprc.bin 0xd5510000 C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software Development/Radar/mrr_18xx_dss/Debug/mrr_18xx_dss.bin
-Number of Input Files 4
-Error opening input image file! C:/Users/Gerardo/Documents/Escuela/Maestria/Tesis/Software
-Error opening input image file! 0xb5510000
-
-**** Build of configuration Debug for project mrr_18xx_mss ****
-
-!CommandLauncher.error.commandCanceled!
-Error: Program "C:/ti/ccs1000/ccs/utils/bin/gmake" is not found in PATH
-
-PATH=[C:\ti\ccs1000\ccs\ccs_base\common\bin;C:\ti\ccs1000\ccs\ccs_base\common\uscif;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\MinGW\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\Gerardo\Documents\Escuela\Maestria\Quatri_4\Embedded_Lab\Quadcopter_ES_Lab\SoftwarePackage\Python27;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MATLAB\R2018b\bin;C:\Program Files\nodejs\;C:\Users\Gerardo\Documents\Escuela\Maestria\Quatri_4\Embedded_Lab\Quadcopter_ES_Lab\SoftwarePackage\MinGW\bin;C:\Users\Gerardo\Documents\Escuela\Maestria\Quatri_4\Embedded_Lab\Quadcopter_ES_Lab\SoftwarePackage\MinGW\msys\1.0\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\MATLAB\MATLAB Runtime\v851\runtime\win32;C:\Program Files\MATLAB\MATLAB Runtime\v92\runtime\win64;C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\bin;C:\Users\Gerardo\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Gerardo\AppData\Local\Programs\Python\Python37\;C:\Users\Gerardo\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Gerardo\AppData\Local\Programs\Python\Python37-32\;C:\Users\Gerardo\AppData\Local\Microsoft\WindowsApps;C:\Users\Gerardo\AppData\Roaming\npm;C:\MinGW\bin]
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/multicore_image_generator/MulticoreImageGen.exe LE 37 0x00000008 xwr18xx_mrr_demo.bin 0x35510000 C:/ti/Thesis_radar/mrr_18xx_mss/Debug/mrr_18xx_mss.bin 0xb5510000 C:/ti/mmwave_sdk_03_02_00_04/firmware/radarss/xwr18xx_radarss_rprc.bin 0xd5510000 C:/ti/Thesis_radar/mrr_18xx_dss/Debug/mrr_18xx_dss.bin
+Number of Input Files 3
+Number of zeros 32
+Number of zeros 16
+Number of zeros 56
+ 
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/crc_multicore_image/crc_multicore_image.exe xwr18xx_mrr_demo.bin xwr18xx_mrr_demo.bin.tmp
+size of App Image is 269440 bytes
+cur_crc_read_addr 128
+cur_crc_read_addr 88064
+cur_crc_read_addr 121792
+Failed to remove CRC temp file
+ 
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/append_bin_crc/gen_bincrc32.exe xwr18xx_mrr_demo.bin
+>>>> Binary CRC32 = 00002c02 <<<<
+>>>> Total bytes in binary file 269444 <<<<
+ 
+ 
 
 **** Build Finished ****

@@ -1,0 +1,74 @@
+
+**** Build of configuration Debug for project pa_18xx_mss ****
+
+"C:\\ti\\ccs1000\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+rm -f C:/ti/Thesis_radar/pa_18xx_mss/pa_18xx_mss.bin
+makefile:189: recipe for target 'pre-build' failed
+process_begin: CreateProcess(NULL, rm -f C:/ti/Thesis_radar/pa_18xx_mss/pa_18xx_mss.bin, ...) failed.
+ 
+gmake[1]: [pre-build] Error 2 (ignored)
+ 
+Building file: "../mss_pa.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/bios_6_73_01_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.R4F -p ti.platforms.cortexR:AWR16XX:false:200 -r debug -c "C:/ti/ti-cgt-arm_16.9.6.LTS" --compileOptions "--enum_type=int " "../mss_pa.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring mss_pa.xer4f from package/cfg/mss_pa_per4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/ti/Thesis_radar/pa_18xx_mss/src/sysbios/sysbios.aer4f ...
+gmake[1]: Entering directory `C:/ti/Thesis_radar/pa_18xx_mss/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `C:/ti/Thesis_radar/pa_18xx_mss/src/sysbios'
+Build of libraries done.
+cler4f package/cfg/mss_pa_per4f.c ...
+Finished building: "../mss_pa.cfg"
+ 
+Building file: "../common/cfg.c"
+Invoking: ARM Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/pa_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_SIZE=0x100000 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="common/cfg.d_raw" --obj_directory="common" --cmd_file="configPkg/compiler.opt"  "../common/cfg.c"
+Finished building: "../common/cfg.c"
+ 
+Building file: "../mss_pa_cli.c"
+Invoking: ARM Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/pa_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_SIZE=0x100000 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_pa_cli.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_pa_cli.c"
+Finished building: "../mss_pa_cli.c"
+ 
+Building file: "../mss_main.c"
+Invoking: ARM Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/ti/Thesis_radar/pa_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_02_00_04" --include_path="C:/ti/mmwave_sdk_03_02_00_04/packages" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=_LITTLE_ENDIAN --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_SIZE=0x100000 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --preproc_with_compile --preproc_dependency="mss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_main.c"
+Finished building: "../mss_main.c"
+ 
+Building target: "pa_18xx_mss.xer4f"
+Invoking: ARM Linker
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --define=_LITTLE_ENDIAN --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_SIZE=0x100000 --define=DebugP_ASSERT_ENABLED -g --c99 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi -z -m"pa_18xx_mss.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/esm/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/gpio/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/pinmux/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/dma/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/drivers/uart/lib" -i"C:/ti/mmwave_sdk_03_02_00_04/packages/ti/utils/cli/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_SIZE=0x100000 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="pa_18xx_mss.xml" --rom_model --unused_section_elimination=on -o "pa_18xx_mss.xer4f" "./mss_main.obj" "./mss_pa_cli.obj" "./common/cfg.obj" "../mss_pa_linker.cmd" "../r4f_linker.cmd" -l"configPkg/linker.cmd"  -llibosal_xwr18xx.aer4f -llibesm_xwr18xx.aer4f -llibgpio_xwr18xx.aer4f -llibsoc_xwr18xx.aer4f -llibmailbox_xwr18xx.aer4f -llibpinmux_xwr18xx.aer4f -llibcrc_xwr18xx.aer4f -llibDMA_xwr18xx.aer4f -llibuart_xwr18xx.aer4f -llibmmwavelink_xwr18xx.aer4f -llibmmwave_xwr18xx.aer4f -llibcli_xwr18xx.aer4f -lrtsv7R4_T_le_v3D16_eabi.lib -llibc.a 
+<Linking>
+Finished building target: "pa_18xx_mss.xer4f"
+ 
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/out2rprc/out2rprc.exe pa_18xx_mss.xer4f pa_18xx_mss.bin
+Parsing the input object file, pa_18xx_mss.xer4f.
+Appending zeros 0
+Appending zeros 256
+Appending zeros 78248
+File conversion complete!
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/multicore_image_generator/MulticoreImageGen.exe LE 37 0x00000006 pa_18xx_mss_demo.bin 0x35510000 pa_18xx_mss.bin 0xb5510000 C:/ti/mmwave_sdk_03_02_00_04/firmware/radarss/xwr18xx_radarss_rprc.bin 0xd5510000 C:/ti/Thesis_radar/pa_18xx_dss/Debug/pa_18xx_dss.bin
+Number of Input Files 3
+Number of zeros 32
+Number of zeros 16
+Number of zeros 56
+ 
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/crc_multicore_image/crc_multicore_image.exe pa_18xx_mss_demo.bin pa_18xx_mss_demo.bin.tmp
+size of App Image is 289920 bytes
+cur_crc_read_addr 128
+cur_crc_read_addr 89600
+cur_crc_read_addr 123328
+Failed to remove CRC temp file
+ 
+C:/ti/mmwave_sdk_03_02_00_04/packages/scripts/ImageCreator/append_bin_crc/gen_bincrc32.exe pa_18xx_mss_demo.bin
+>>>> Binary CRC32 = a2880b6a <<<<
+>>>> Total bytes in binary file 289924 <<<<
+ 
+ 
+
+**** Build Finished ****

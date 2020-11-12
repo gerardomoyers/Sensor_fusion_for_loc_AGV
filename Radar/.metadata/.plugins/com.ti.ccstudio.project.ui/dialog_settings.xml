@@ -5,7 +5,7 @@
 	<section name="com.ti.ccstudio.project.ui.internal.properties.DynamicPropertiesPageManager">
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.importexport.ProjectImportPage">
-		<item key="CCS.BROWSE_DIRS_FILTER" value="C:\ti\mmwave_automotive_toolbox_2_9_1\labs\lab0011_mrr_beamsteering"/>
+		<item key="CCS.BROWSE_DIRS_FILTER" value="C:\ti\mmwave_automotive_toolbox_3_0_0\labs\lab0007_medium_range_radar"/>
 		<item key="CCS.COPY_INTO_WORKSPACE" value="true"/>
 		<item key="CCS.IMPORT_REFERENCED_PROJECTS" value="false"/>
 		<item key="CCS.IMPORT_FROM_ARCHIVE" value="false"/>
